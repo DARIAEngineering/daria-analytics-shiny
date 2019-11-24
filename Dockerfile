@@ -7,7 +7,7 @@ ENV DCAF_DIR=/usr/src/app \
     SHINY_DIR=/srv/shiny-server
 
 # get our gem house in order
-RUN mkdir -p ${DCAF_DIR} && cd ${DCAF_DIR}
+RUN mkdir -p ${DCAF_DIR}
 WORKDIR ${DCAF_DIR}
 COPY packages.R ${DCAF_DIR}/packages.R
 

@@ -8,6 +8,7 @@ services:
       - "3838:3838"
     volumes:
       - log:/var/log/shiny-server
+      - ./App:/srv/shiny-server
 
 volumes:
   log:
