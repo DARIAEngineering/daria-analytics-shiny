@@ -7,8 +7,5 @@ services:
     ports:
       - "3838:3838"
     volumes:
-      - log:/var/log/shiny-server
+      - ./log:/var/log/shiny-server
       - ./App:/srv/shiny-server
-
-volumes:
-  log:
