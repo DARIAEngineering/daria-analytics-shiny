@@ -6,3 +6,8 @@ services:
       dockerfile: Dockerfile
     ports:
       - "3838:3838"
+    volumes:
+      - log:/var/log/shiny-server
+
+volumes:
+  log:
