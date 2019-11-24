@@ -1,0 +1,8 @@
+version: '3.1'
+services:
+  shiny:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - "3838:3838"
